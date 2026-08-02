@@ -201,7 +201,7 @@ export async function getMediaUrl(id: number): Promise<string | null> {
   const { data, ok } = await safeFetch<{ source_url?: string }>(
     `/media/${id}?_fields=source_url`,
     {},
-    ["wp-pages", `wp-media-${id}`]
+    ["wp-pages", "wp-media", `wp-media-${id}`]
   );
   if (!ok || !data || typeof data.source_url !== "string") return null;
   return data.source_url;

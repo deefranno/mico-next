@@ -36,9 +36,11 @@ export async function POST(req: NextRequest) {
     // Refresh the tagged data caches used by lib/wp.ts.
     revalidateTag("wp-posts");
     revalidateTag("wp-pages");
+    revalidateTag("wp-media");
 
-    // Also refresh specific rendered routes when we know them.
-    revalidatePath("/"); // homepage news grid
+    // Refresh rendered routes. Use "layout" to clear the whole route subtree
+    // so the homepage (and its ACF/image data) always refreshes on any change.
+    revalidatePath("/", "layout");
     if (slug && type === "post") revalidatePath(`/posts/${slug}`);
     if (slug && type === "page") revalidatePath(`/${slug}`);
 
