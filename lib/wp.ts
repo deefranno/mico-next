@@ -177,7 +177,34 @@ export async function getPageAcf(
   if (!ok || !data || typeof data.acf !== "object" || data.acf === null) {
     return {};
   }
-  return data.acf;
+  const acf = data.acf;
+
+  // ACF image fields may return a numeric attachment ID (depending on the
+  // field's Return Format). Resolve any *_image field that's a number into its
+  // URL so acfImage() works regardless of how the field is configured.
+  const imageKeys = Object.keys(acf).filter(
+    (k) => k.endsWith("_image") && typeof acf[k] === "number"
+  );
+  await Promise.all(
+    imageKeys.map(async (k) => {
+      const url = await getMediaUrl(acf[k] as number);
+      acf[k] = url ?? "";
+    })
+  );
+
+  return acf;
+}
+
+/** Resolve a WP media attachment ID to its source URL. Cached + tagged. */
+export async function getMediaUrl(id: number): Promise<string | null> {
+  if (!id) return null;
+  const { data, ok } = await safeFetch<{ source_url?: string }>(
+    `/media/${id}?_fields=source_url`,
+    {},
+    ["wp-pages", `wp-media-${id}`]
+  );
+  if (!ok || !data || typeof data.source_url !== "string") return null;
+  return data.source_url;
 }
 
 /**

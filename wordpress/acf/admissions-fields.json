@@ -1,0 +1,73 @@
+{
+  "key": "group_mico_admissions",
+  "title": "Mico Admissions Content",
+  "fields": [
+    {
+      "key": "field_adm_hero_title",
+      "label": "Hero Title",
+      "name": "adm_hero_title",
+      "type": "text",
+      "default_value": "Admissions"
+    },
+    {
+      "key": "field_adm_hero_subtitle",
+      "label": "Hero Subtitle",
+      "name": "adm_hero_subtitle",
+      "type": "text",
+      "default_value": "Your Opportunity Starts Now"
+    },
+    {
+      "key": "field_adm_hero_image",
+      "label": "Hero Background Image",
+      "name": "adm_hero_image",
+      "type": "image",
+      "instructions": "Banner background. Leave empty for the neutral placeholder.",
+      "return_format": "url",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_adm_intro_heading",
+      "label": "Intro Heading",
+      "name": "adm_intro_heading",
+      "type": "text",
+      "default_value": "Ready to Set Your Future in Motion?"
+    },
+    {
+      "key": "field_adm_intro_body",
+      "label": "Intro Paragraph",
+      "name": "adm_intro_body",
+      "type": "textarea",
+      "rows": 4,
+      "default_value": "Founded in 1836, Mico has spent generations turning ambition into achievement. You can launch the next great enterprise, lead groundbreaking research or become an agent of change in your community. It all starts with your application."
+    },
+    {
+      "key": "field_adm_form_heading",
+      "label": "Form Box \u2014 Heading",
+      "name": "adm_form_heading",
+      "type": "text",
+      "default_value": "Start Your Application"
+    },
+    {
+      "key": "field_adm_form_subheading",
+      "label": "Form Box \u2014 Subheading",
+      "name": "adm_form_subheading",
+      "type": "text",
+      "default_value": "Fields marked with * are required."
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page",
+        "operator": "==",
+        "value": "72"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "active": true,
+  "show_in_rest": 1,
+  "description": "Editable content for the Admissions page. Assign this group to your WP 'Admissions' page."
+}

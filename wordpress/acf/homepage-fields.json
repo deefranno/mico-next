@@ -1,0 +1,203 @@
+{
+  "key": "group_mico_homepage",
+  "title": "Mico Homepage Content",
+  "fields": [
+    {
+      "key": "field_home_hero_headline",
+      "label": "Hero Headline",
+      "name": "hero_headline",
+      "type": "text",
+      "instructions": "Big headline over the campus photo. Default: Do It With Thy Might",
+      "default_value": "Do It With Thy Might"
+    },
+    {
+      "key": "field_home_hero_body",
+      "label": "Hero Paragraph",
+      "name": "hero_body",
+      "type": "textarea",
+      "instructions": "Intro paragraph under the hero headline.",
+      "rows": 4,
+      "default_value": "Founded in 1836, Mico University has spent generations turning curiosity into achievement. From student-led research to athletics and civic leadership, Mico prepares the next wave of doers."
+    },
+    {
+      "key": "field_home_hero_button_label",
+      "label": "Hero Button Label",
+      "name": "hero_button_label",
+      "type": "text",
+      "default_value": "Start your application"
+    },
+    {
+      "key": "field_home_hero_button_url",
+      "label": "Hero Button URL",
+      "name": "hero_button_url",
+      "type": "text",
+      "default_value": "/admissions#apply"
+    },
+    {
+      "key": "field_home_hero_image",
+      "label": "Hero Background Image",
+      "name": "hero_image",
+      "type": "image",
+      "instructions": "Full-width hero background. Leave empty to use the bundled default photo.",
+      "return_format": "url",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_home_curiosity_heading",
+      "label": "Curiosity Section \u2014 Heading",
+      "name": "curiosity_heading",
+      "type": "text",
+      "default_value": "Turn your Curiosity into Discovery"
+    },
+    {
+      "key": "field_home_curiosity_body1",
+      "label": "Curiosity Section \u2014 Paragraph 1",
+      "name": "curiosity_body1",
+      "type": "textarea",
+      "rows": 3,
+      "default_value": "With more than 180 degree programs across 10 colleges, Mico offers a path for every ambition \u2014 a research lab, a courtroom, a clinic, a stage or a startup."
+    },
+    {
+      "key": "field_home_curiosity_body2",
+      "label": "Curiosity Section \u2014 Paragraph 2",
+      "name": "curiosity_body2",
+      "type": "textarea",
+      "rows": 3,
+      "default_value": "At Mico, learning goes beyond the classroom. Work alongside faculty researchers, gain hands-on field experience and contribute to discoveries shaping health, technology and community."
+    },
+    {
+      "key": "field_home_curiosity_image",
+      "label": "Curiosity Section \u2014 Image",
+      "name": "curiosity_image",
+      "type": "image",
+      "instructions": "Right-hand photo. Leave empty for the neutral placeholder.",
+      "return_format": "url",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_home_waiting_heading",
+      "label": "Waiting Section \u2014 Heading",
+      "name": "waiting_heading",
+      "type": "text",
+      "default_value": "Discover What's Waiting for You"
+    },
+    {
+      "key": "field_home_waiting_body",
+      "label": "Waiting Section \u2014 Paragraph",
+      "name": "waiting_body",
+      "type": "textarea",
+      "rows": 4,
+      "default_value": "From the moment you step on campus, Mico feels like home. You'll challenge yourself, find support from a community that believes in your potential and connect with people who become lifelong friends."
+    },
+    {
+      "key": "field_home_waiting_image",
+      "label": "Waiting Section \u2014 Image",
+      "name": "waiting_image",
+      "type": "image",
+      "return_format": "url",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_home_stat1_number",
+      "label": "Stat 1 \u2014 Number",
+      "name": "stat1_number",
+      "type": "text",
+      "default_value": "14"
+    },
+    {
+      "key": "field_home_stat1_label",
+      "label": "Stat 1 \u2014 Label",
+      "name": "stat1_label",
+      "type": "text",
+      "default_value": "NCAA Division I Sports"
+    },
+    {
+      "key": "field_home_stat2_number",
+      "label": "Stat 2 \u2014 Number",
+      "name": "stat2_number",
+      "type": "text",
+      "default_value": "220+"
+    },
+    {
+      "key": "field_home_stat2_label",
+      "label": "Stat 2 \u2014 Label",
+      "name": "stat2_label",
+      "type": "text",
+      "default_value": "Clubs, academic associations and professional organizations"
+    },
+    {
+      "key": "field_home_stat3_number",
+      "label": "Stat 3 \u2014 Number",
+      "name": "stat3_number",
+      "type": "text",
+      "default_value": "190K+"
+    },
+    {
+      "key": "field_home_stat3_label",
+      "label": "Stat 3 \u2014 Label",
+      "name": "stat3_label",
+      "type": "text",
+      "default_value": "Alumni network"
+    },
+    {
+      "key": "field_home_research_kicker",
+      "label": "Research Banner \u2014 Kicker",
+      "name": "research_kicker",
+      "type": "text",
+      "default_value": "RESEARCH AT MICO"
+    },
+    {
+      "key": "field_home_research_heading",
+      "label": "Research Banner \u2014 Heading",
+      "name": "research_heading",
+      "type": "text",
+      "default_value": "Where Curiosity Meets Rigor"
+    },
+    {
+      "key": "field_home_research_body",
+      "label": "Research Banner \u2014 Paragraph",
+      "name": "research_body",
+      "type": "textarea",
+      "rows": 3,
+      "default_value": "At Mico, research isn't a headline \u2014 it's a habit. With growing investment across health, environment and technology, faculty and students are turning ideas into impact."
+    },
+    {
+      "key": "field_home_research_image",
+      "label": "Research Banner \u2014 Background Image",
+      "name": "research_image",
+      "type": "image",
+      "return_format": "url",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_home_cta_heading",
+      "label": "CTA Banner \u2014 Heading",
+      "name": "cta_heading",
+      "type": "text",
+      "default_value": "Take the next step with Mico"
+    },
+    {
+      "key": "field_home_cta_image",
+      "label": "CTA Banner \u2014 Background Image",
+      "name": "cta_image",
+      "type": "image",
+      "return_format": "url",
+      "preview_size": "medium"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page",
+        "operator": "==",
+        "value": "25"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "active": true,
+  "show_in_rest": 1,
+  "description": "Editable content for the Mico headless homepage. Empty fields fall back to the built-in defaults on astro.websage.lat."
+}

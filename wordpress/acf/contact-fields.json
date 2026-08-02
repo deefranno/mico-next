@@ -1,0 +1,88 @@
+{
+  "key": "group_mico_contact",
+  "title": "Mico Contact Content",
+  "fields": [
+    {
+      "key": "field_con_hero_title",
+      "label": "Hero Title",
+      "name": "con_hero_title",
+      "type": "text",
+      "default_value": "Contact Us"
+    },
+    {
+      "key": "field_con_hero_image",
+      "label": "Hero Background Image",
+      "name": "con_hero_image",
+      "type": "image",
+      "return_format": "url",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_con_getintouch_heading",
+      "label": "Sidebar Heading",
+      "name": "con_getintouch_heading",
+      "type": "text",
+      "default_value": "Get in Touch"
+    },
+    {
+      "key": "field_con_campus_lines",
+      "label": "Main Campus \u2014 Address Lines",
+      "name": "con_campus_lines",
+      "type": "textarea",
+      "instructions": "One line per row (e.g. street on line 1, city on line 2).",
+      "rows": 2,
+      "default_value": "1A Marescaux Road\nKingston 5"
+    },
+    {
+      "key": "field_con_phone",
+      "label": "Phone",
+      "name": "con_phone",
+      "type": "text",
+      "default_value": "(876) 929-5260"
+    },
+    {
+      "key": "field_con_email",
+      "label": "Email",
+      "name": "con_email",
+      "type": "text",
+      "default_value": "info@mico.edu"
+    },
+    {
+      "key": "field_con_hours",
+      "label": "Office Hours",
+      "name": "con_hours",
+      "type": "text",
+      "default_value": "Mon\u2013Fri, 8:00am \u2013 5:00pm"
+    },
+    {
+      "key": "field_con_form_heading",
+      "label": "Form Box \u2014 Heading",
+      "name": "con_form_heading",
+      "type": "text",
+      "default_value": "Send Us a Message"
+    },
+    {
+      "key": "field_con_map_embed",
+      "label": "Map Embed URL",
+      "name": "con_map_embed",
+      "type": "text",
+      "instructions": "Optional Google Maps embed URL (the src from the iframe). Leave empty for the placeholder block.",
+      "default_value": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page",
+        "operator": "==",
+        "value": "74"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "active": true,
+  "show_in_rest": 1,
+  "description": "Editable content for the Contact page. Assign this group to your WP 'Contact' page."
+}
