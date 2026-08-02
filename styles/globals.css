@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap");
+
+/* Base rules copied verbatim from the source design's <helmet> block. */
+body {
+  margin: 0;
+  background: #fff;
+}
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0.35);
+}
+a:hover {
+  color: #b8860b;
+}
+
+/* Rendered WordPress content inherits the site typography.
+   Keeps injected HTML consistent with the Mico design system. */
+.wp-content {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #3a3a3a;
+}
+.wp-content h1,
+.wp-content h2,
+.wp-content h3,
+.wp-content h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.2;
+}
+.wp-content h2 {
+  font-size: 30px;
+  margin: 40px 0 16px;
+}
+.wp-content h3 {
+  font-size: 22px;
+  margin: 32px 0 12px;
+}
+.wp-content p {
+  margin: 0 0 18px;
+}
+.wp-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.wp-content a {
+  font-weight: 600;
+}
+.wp-content ul,
+.wp-content ol {
+  padding-left: 22px;
+  margin: 0 0 18px;
+}
+.wp-content blockquote {
+  border-left: 4px solid #f2a900;
+  margin: 24px 0;
+  padding: 8px 0 8px 20px;
+  color: #555;
+  font-style: italic;
+}
+
+/* ---------------------------------------------------------------
+   Responsive helpers (mobile <= 900px)
+   Applied via className on top of the design's inline styles.
+   Inline styles set the desktop appearance; these override on mobile.
+   --------------------------------------------------------------- */
+@media (max-width: 900px) {
+  /* Two-column content sections collapse to a single column */
+  .mico-grid-2 {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  /* Latest-news two-up grid collapses */
+  .mico-grid-news {
+    grid-template-columns: 1fr !important;
+  }
+  /* News card stacks image above text */
+  .mico-news-card {
+    flex-direction: column !important;
+  }
+  .mico-news-card .mico-news-thumb {
+    width: 100% !important;
+    height: 180px !important;
+  }
+  /* Contact page: sidebar + form stack */
+  .mico-contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  /* Footer three columns -> one */
+  .mico-footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  /* Generic wide-padding sections tighten to 20px sides */
+  .mico-pad {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  /* Hero headline scales down */
+  .mico-hero-h1 {
+    font-size: 34px !important;
+  }
+  .mico-hero-copy {
+    font-size: 16px !important;
+  }
+  /* Student-type radio grid: 4 cols -> 2 */
+  .mico-studenttype-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  /* Form two-up fields stack */
+  .mico-form-2 {
+    grid-template-columns: 1fr !important;
+  }
+  /* Research banner text box: full width, auto height */
+  .mico-research-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+    padding: 32px 20px !important;
+  }
+  .mico-research-wrap {
+    height: auto !important;
+  }
+  /* CTA banner grid stacks */
+  .mico-cta-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .mico-hero-pad {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
